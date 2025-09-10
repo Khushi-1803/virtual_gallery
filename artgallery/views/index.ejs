@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-[url('https://i.pinimg.com/736x/e5/51/25/e551251367b94b5f117a65edead46bda.jpg')] bg-no-repeat bg-center bg-cover h-screen flex items-center justify-center">
+  <div class="w-[25vw]  bg-white  px-5 rounded-lg">
+    <h1 class="text-3xl leading-none text-center mt-5 mb-5 tracking-tighter font-semibold">Welcome to <span class="text-[#f70776]">The Art Hive</span></h1>
+    <form  class="flex flex-col items-center justify-center w-full" action="/login" method="post">
+      <label class="self-start ml-12">username</label>
+      <input class=" w-64 block border-2 rounded-lg px-2 py-2 mb-2" type="text" name="username" placeholder="Enter your username">
+      <label class="self-start ml-12">Password</label>
+      <input class="w-64 block border-2 rounded-lg px-3 py-2 mb-2" type="password" name="password" placeholder="Enter your Password">
+      <a class="mt-2 font-semibold  text-zinc-500 inline-block" href="#">Forgotten your Password?</a>
+      <input class="block border-2 mt-3 w-64 px-3 py-2 bg-red-600 text-white rounded-full" type="submit" value="Login">
+      <p class="text-xs font-semibold text-zinc-700 mt-3 w-2/3 mx-auto text-center">"Your journey into colors, textures, and stories begins here. See you at The Art Hive !"</p>
+    </form>
+    <a class="inline-block mt-2 mb-6 text-sm font-semibold w-full text-center text-zinc-700 " href="/register">Don't have an account?<span class="text-blue-400">Click here</span></a>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>
+ 
+

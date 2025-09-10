@@ -1,0 +1,25 @@
+<% include ./partials/header.ejs %>
+<div class="w-full min-h-screen bg-zinc-800 text-white px-4 py-6">
+  <h1 class="text-xl sm:text-2xl md:text-center font-semibold">Create a new bit</h1>
+  <hr class="opacity-10 mt-3 mb-6">
+
+  <form action="/createbits" method="post" enctype="multipart/form-data"
+        class="max-w-xl w-full mx-auto flex flex-col gap-3">
+    <input
+      class="block w-full px-3 py-2 border rounded-md bg-zinc-900"
+      type="file" name="postimage" required>
+
+    <input
+      class="block w-full px-3 py-2 border-2 rounded-md bg-zinc-900"
+      type="text" placeholder="Title" name="title">
+
+    <textarea
+      class="block w-full px-3 py-2 border-2 rounded-md bg-zinc-900"
+      placeholder="Description" name="description"></textarea>
+
+    <input
+      class="block w-full px-3 py-2 mt-2 bg-red-700 rounded-md cursor-pointer hover:bg-red-600 transition"
+      type="submit" value="Create a Bit">
+  </form>
+</div>
+<% include ./partials/footer.ejs %>
